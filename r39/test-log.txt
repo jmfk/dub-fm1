@@ -1,0 +1,115 @@
+$ clang -O1 -g -pthread -fsanitize=address,undefined -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_dual_core.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-dual-address-undefined
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-dual-address-undefined
+PASS12288frames serial/pthread/partial-worker-timeout PCM and17taps bit-identical; gain rollback, single sample advance,1/7/32frame blocks, steals/pan/sends and fallback
+
+$ clang -O1 -g -pthread -fsanitize=thread -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_dual_core.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-dual-thread
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-dual-thread
+PASS12288frames serial/pthread/partial-worker-timeout PCM and17taps bit-identical; gain rollback, single sample advance,1/7/32frame blocks, steals/pan/sends and fallback
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_drum_headroom.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-drum_headroom-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-drum_headroom-test
+PASS4x30000 PCM normalized before drive, clean drum boot DRIVE0, unchanged raw levels, kick protection and4/8 default caps
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_limiter.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-limiter-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-limiter-test
+PASS2500 blocks exact SLOOP limiter PCM parity, loud stereo bounded, quiet linear32sample latency at1/2/4/8/16/32 chunks and panic reset
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_transitions.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-transitions-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-transitions-test
+PASS PCM steal/retrigger32sample complementary fades, synth steal bounded tail, strict source caps and panic silence
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_participation.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-participation-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-participation-test
+PASS simultaneous tracks1/2/3/drums: OSC1/1/1, contribution frames2048/2048/2048/2048, all-four2048
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_delay_engines.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-delay_engines-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-delay_engines-test
+PASS direct uncompressed PCM16 exact writes, fixed192KiB/24576-cell capacity independent of bit effect,36 rate/bit responses, real32s echo, optional feedback degradation, preserved times/clamp edit, independent reset and physical/MIDI settings
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_fx_mod.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-fx_mod-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-fx_mod-test
+PASS all30 FX destinations: four-track sum, bounds/discrete rounding, signed ENV, OFF restore, immutable base params and actual audio master modulation
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_profile.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-profile-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-profile-test /Users/jmfk/code/m-vave/.build-env/dub-r39-profile.bin
+PASS stage sums, late-block totals/top4 normalized ranking and event snapshots, timer/64-bit wrap, seqlock, zero/OFF, bounded codec, audio-owned freeze/enable ACK, duplicate request idempotence, TX retry/reentrant guard and lease disable
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_global_limits.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-global_limits-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-global_limits-test
+PASS OFF blocks and stops each source independently, no OSC phase advance/PCM raw residue, INF restores capacity without stale-note resurrection, OFF/INF labels
+PASS Settings > VOICES via physical SAVE and repeated EDIT, global K1/K2 bounds, unused K3/K4
+PASS independent sample/OSC limits, partial mono groups, released-first/oldest, retrigger and note-off/tail ownership, physical controls/defaults
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_benchmark_control.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-benchmark_control-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-benchmark_control-test /Users/jmfk/code/m-vave/.build-env/dub-r39-runtime-reply.bin
+PASS additive request IDs/validation, applied audio snapshots/caps/counts/hash, session retry/restore/REC, pattern preservation, busy refusal, wrap-safe lease and unchanged legacy reply
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_runtime_bridge.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-runtime_bridge-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-runtime_bridge-test
+PASS real runtime bridge defers ACK until audio apply, backpressure/request IDs, lease auto-restore and dropped-queue timeout/retry
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_sample_store.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-sample_store-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-sample_store-test /Users/jmfk/code/m-vave/.build-env/dub-r39-sample-info.bin /Users/jmfk/code/m-vave/.build-env/dub-r39-sample-bank.bin
+PASS sample protocol/read/retry/stale/abort/timeout/busy/CRC, 80 partial NOR power cuts with region sentinels/restart, PCM cache/loop seam/gate ownership and factory one-shot
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_diagnostics.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-diagnostics-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-diagnostics-test /Users/jmfk/code/m-vave/.build-env/dub-r39-diag-fixture.bin
+PASS performance means/normalized peaks/late blocks,64-bit rollover, deferred reset/generation, bounded snapshot and exact diagnostics-only request/7-bit checksum reply185bytes
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 /Users/jmfk/code/m-vave/dub-synth/r39/test_stems.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-stems-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-stems-test
+PASS17 taps, group gates, track4 drum mix, pre-mix drum isolation, mixer validation and physical controls; no device access
+
+$ clang -O1 -gline-tables-only -fsanitize=address,undefined -fno-sanitize-recover=all -I /Users/jmfk/code/m-vave/dub-synth/r39 -I /Users/jmfk/code/m-vave/.build-env/dub-synth-r39-work/tests -I /Users/jmfk/code/m-vave/.build-env/dub-synth-r39-work/firmware/src /Users/jmfk/code/m-vave/dub-synth/r39/test_diag_usb.c -o /Users/jmfk/code/m-vave/.build-env/dub-r39-usb-profile-test
+
+$ /Users/jmfk/code/m-vave/.build-env/dub-r39-usb-profile-test
+PASS profile6/7 intercepted without updater dispatch,591-byte USB-MIDI response across64-packet ring with actual TX backpressure
+PASS actual USB driver: diagnostic requests intercepted without updater dispatch, reset/realtime framing, original loader parser preserved in mock,185-byte reply USB-MIDI packetization exact; no devices opened
+
+$ python3 /Users/jmfk/code/m-vave/dub-synth/r39/test_download.py
+PASS C firmware fixture -> Python decoded mean/peak report, malformed replies rejected, snapshot captured over mock MIDI ports; no real MIDI access
+
+$ python3 /Users/jmfk/code/m-vave/dub-synth/r39/test_resumable_eval.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+OK
+
+$ python3 /Users/jmfk/code/m-vave/dub-synth/r39/test_stability_benchmark.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.383s
+
+OK
+
+$ python3 /Users/jmfk/code/m-vave/dub-synth/r39/test_profile_tools.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.550s
+
+OK
+
+$ python3 /Users/jmfk/code/m-vave/dub-synth/r39/build_wasm.py
+Built engine.wasm and self-contained simulator.html
+
+$ node /Users/jmfk/code/m-vave/dub-synth/r39/test_wasm.cjs
+PASS same WASM motor: four MIDI parts, sound/releases, legato/CC80, physical panel and pixels
+
+$ node /Users/jmfk/code/m-vave/dub-synth/r39/test_delay_pages_ui.cjs
+PASS physical A/B page cycling, independent settings, SHIFT tone, reverb, labels and live Worklet

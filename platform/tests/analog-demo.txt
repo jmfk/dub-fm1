@@ -1,0 +1,29 @@
+100 btn 12
+500 shot
+800 btn 3
+900 btn 8
+1200 shot
+1500 btn 3
+1600 btn 9
+1900 shot
+2200 btn 4
+2300 btn 8
+2600 shot
+2900 btndown 7
+3100 shot
+3300 btnup 7
+3600 btn 5
+3700 btn 11
+4000 shot
+4300 btndown 7
+4600 shot
+4800 btnup 7
+5100 btn 6
+5400 shot
+5700 btn 2
+5800 btndown 7
+5900 btn 8
+6100 btnup 7
+6400 shot
+6600 btn 5
+68000 end

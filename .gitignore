@@ -1,0 +1,18 @@
+# Earlier local revision archives and hardware/device records are not part of this import.
+/r[0-9]*/
+!/r39/
+/hardware-reports/
+/dub-synth/
+/.build-env/
+/build/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.mobileprovision
+/logs/
+**/status.json

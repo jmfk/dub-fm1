@@ -1,0 +1,24 @@
+{
+  "version": "DUB Synth R1",
+  "package": "DUB-r1.fwsc",
+  "description": "Four-part paraphonic MIDI synth, 32 oscillators, four filters, two delays, shared FDN reverb and mixer. RAM patches; no recorder; hardware acceptance pending.",
+  "sha256": {
+    "LICENSING.md": "e0e32d450018c60091706f5fb3967e706e9b06f5c659421e0d8a83ec9db74d27",
+    "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "demo.wav": "b6635ad3d0e92b73dc7fb3e6b272973256d0e63f25d8246a4dcfb2c1e3dde256",
+    "source.zip": "e1dda828d11c5ebc7a9d8082638a82988de93e252bc0b56da187180fe9bded71",
+    "manual_install.py": "e16b56e68abe468926031375ed1051a8d66ece03a9d00fc7f34946b326ba13bd",
+    "render-report.json": "2bc7486b878103502bf2494356d0d1741831ec1e706e5f2233dc4f7197d06fc3",
+    "README.md": "345916d6f25dae1401201e3909f1f67cf3ead80f3bcbacfd2cd43089249836cd",
+    "MEMORY.md": "b18e763ab04ac5bd830645fa98fa42ac648d0db580d44344139fbb656e0e4b3d",
+    "simulator.html": "a753d38e3186280b1b5fb4000f60c00e5c54220bd5c65439d19e33d953d97253",
+    "Installera DUB R1.command": "a1ec1cdfa6acac563f3adc33a64ecf3ee5e87fb0fbc4aee93e7b696c9ce56fe9",
+    "verification.json": "70f26a205d50026336d718a7db02136f15d0b53e6e553fc94701cdcbcb37bb2e",
+    "WORK-NOTE.md": "efd6832bd4f5da79908efc49471fc85de15b15d8b55844d367b90c62f650cd0e",
+    "build-log.txt": "b80a74f59534c59f283ed469e2b64703597c0b41b19dca8aabbfc3c13ccb50d0",
+    "DUB-r1.fwsc": "0ea6d962a6dca4dc05b48615b1a83130156c5e35b0d504401898d5f8738c5149",
+    "fm1_install.py": "4ca9924b917f2f9d51ff93efd3d40447fe8b795edf82f1989d3a42c84c786db3",
+    "test-log.txt": "220579baaecd223008cb3f7818b4d20a8a57772497ea7bf6575d8b67740bcff4",
+    "verified-build.json": "42bccd39bc62b42ac3c9552c6349e9194997383563ff4a53c36bdb66eb8858a6"
+  }
+}

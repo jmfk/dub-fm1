@@ -1,0 +1,8 @@
+* text=auto
+# Preserve the exact verified source/archive bytes, including legacy whitespace.
+r39/** -text -whitespace
+releases/** -text -whitespace
+*.fwsc binary
+*.zip binary
+*.wasm binary
+*.png binary

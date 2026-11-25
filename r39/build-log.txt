@@ -1,0 +1,5 @@
+loader: image 10496 B at 0x1c0a800, bss end 0x1c0ff50
+loader: ota.bin 9081 B
+ok .ram_text: 4670 insns, no calls
+ok image 258500 B of 581564; RAM .data+.bss 97724 B of 98304; pool 343724 B of 344064
+ok core1 stacks/scratch 3968 B; copy/PC/region bounds checked

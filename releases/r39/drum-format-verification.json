@@ -1,0 +1,22 @@
+{
+  "source": {
+    "files": 11,
+    "channels": 1,
+    "sample_width_bits": 16,
+    "rate": 48000,
+    "compression": "NONE",
+    "all_source_hashes_match": true
+  },
+  "firmware": {
+    "channels": 1,
+    "signed_bits": 16,
+    "rate": 22050,
+    "pcm_bytes": 90182,
+    "identical_to_r25": true
+  },
+  "playback": {
+    "engine_rate": 44100,
+    "source_frames_per_output_frame": 0.5,
+    "interpolation": "linear"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "rate": 22050,
+  "pcm_bytes": 90182,
+  "samples": [
+    {
+      "name": "KICK",
+      "file": "009 Commercial Kick.wav",
+      "source_rate": 48000,
+      "source_frames": 3150,
+      "output_frames": 1447,
+      "sha256": "22c229b06b39f5403dd2e3a34f70b9787393f603683b2dfa8a95dbc43160c804"
+    },
+    {
+      "name": "SNARE",
+      "file": "033 Real Snare.wav",
+      "source_rate": 48000,
+      "source_frames": 14995,
+      "output_frames": 6888,
+      "sha256": "d84c36138315b576002f1824a353e6e90b5ed81799a0e75790cd28b1c11d3e25"
+    },
+    {
+      "name": "STICK",
+      "file": "075 TR-808 Side Stick.wav",
+      "source_rate": 48000,
+      "source_frames": 640,
+      "output_frames": 294,
+      "sha256": "500d6be103ec35e9ee7bf9eb15bcecc48bdd3fd869c6f3171472afef3363563f"
+    },
+    {
+      "name": "TOM808",
+      "file": "105 TR-808 Tom 4.wav",
+      "source_rate": 48000,
+      "source_frames": 23369,
+      "output_frames": 10735,
+      "sha256": "3518e19b27a30e9dc5a2025f7104108f075be9e674bf1b551f99349b4a5a8f4f"
+    },
+    {
+      "name": "TOM606",
+      "file": "109 TR-606 Tom 4.wav",
+      "source_rate": 48000,
+      "source_frames": 18266,
+      "output_frames": 8391,
+      "sha256": "b3fd30cf182f1f8897d26395882563c4153bde3782c42789e1fe8db4dd3ccf32"
+    },
+    {
+      "name": "CH808",
+      "file": "120 TR-808 Closed Hi-Hat.wav",
+      "source_rate": 48000,
+      "source_frames": 3094,
+      "output_frames": 1421,
+      "sha256": "50859031d066042c35d6f53cd564cdf36249a5e6b1e4a4289ec6bd897b379423"
+    },
+    {
+      "name": "OH808",
+      "file": "121 TR-808 Open Hi-Hat.wav",
+      "source_rate": 48000,
+      "source_frames": 18306,
+      "output_frames": 8409,
+      "sha256": "c2cad54efb27e315a41d6468a735dd32634a794963f7b6c0979ec2bf89e672f4"
+    },
+    {
+      "name": "CH78",
+      "file": "122 CR-78 Closed Hi-Hat.wav",
+      "source_rate": 48000,
+      "source_frames": 2702,
+      "output_frames": 1241,
+      "sha256": "a9401c835085ab15afc01672277249af899ea176f772daa4b56de25112efa1cb"
+    },
+    {
+      "name": "COWBELL",
+      "file": "140 Cowbell Low.wav",
+      "source_rate": 48000,
+      "source_frames": 8413,
+      "output_frames": 3865,
+      "sha256": "cdb03ed454507bf33f9f2a122d5dc74981d84504abb3dafbe0269699d2ce288a"
+    },
+    {
+      "name": "SHAKER",
+      "file": "149 Shaker.wav",
+      "source_rate": 48000,
+      "source_frames": 2172,
+      "output_frames": 998,
+      "sha256": "ee98b7fc7cc95de4b1dc2ceed645486152273ffdb171d1fb3f68a1539c447bb4"
+    },
+    {
+      "name": "CLAVES",
+      "file": "150 Claves.wav",
+      "source_rate": 48000,
+      "source_frames": 3051,
+      "output_frames": 1402,
+      "sha256": "c4c95118aa1e2f4363a3dd138357769e38879fa392005e5b1060dbce441847f0"
+    }
+  ]
+}
